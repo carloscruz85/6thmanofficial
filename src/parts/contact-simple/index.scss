@@ -4,57 +4,17 @@ $soft_gray: #454545;
 
 .contact-container {
   // border: 1px solid red; 
-  @include multi(height, 90vh !important, 90vh !important, 90vh !important, 90vh !important);
+  // @include multi(height, 90vh !important, 90vh !important, 90vh !important, 90vh !important);
   // height: auto;
-  @include center-center();
+  // @include center-center();
   @include back-image();
   @include multi(   background-position, 70% 50%, 60% center ,  center center,  center center );
   background-image: url(../../assets/images/contact.gif);
-  input,
-  textarea {
-    background-color: #1f1f1f;
-    border: 0;
-    width: 100%;
-    @include multi(margin, 0.2em 0, 0.8rem 0, 0.2rem 0, 0.8rem 0);
-    padding: 1rem 1rem;
-    @include multi(padding, 0.5rem 0.5rem, 1rem 1rem, 0.5rem 0.5rem, 1rem 1rem);
-    color: $soft_brown;
-    font-family: avenir-book;
-
-    &:focus {
-      outline: none !important;
-      border: 1px solid $soft_brown;
-    }
-    &.about {
-      height: 300px;
-      @include multi(height, 150px, 300px, 100px, 300px);
-      margin-bottom: 2rem;
-    }
-  }
-  ::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: $soft_gray;
-    opacity: 1; /* Firefox */
-  }
-
-  :-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: $soft_gray;
-  }
-
-  ::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: $soft_gray;
-  }
-  input{
-    @include multi(margin, 0.5rem 0 !important, 0.5rem 0 !important, 0, 0);
-  }
 
   /*new simple contact*/
   .simple-contact-data{
-    // text-align: left;
     @include multi(text-align, center, center, left, left);
-    // border: 1px solid blue;
+    margin: 5rem 0;
     a{
       background: linear-gradient( 184deg , #964922 0%, #642200 100%);
       display: inline-block;
@@ -62,42 +22,9 @@ $soft_gray: #454545;
       padding: 0.5rem 2rem;
       // margin: 1rem;
       border-radius: 2rem;
+      text-transform: uppercase;
     }
   }
 }
 
-.intro-form {
-  text-align: left !important;
-   @include multi(text-align, center !important, center !important, left !important, left !important);
-   @include multi(margin-bottom, 2rem, 2rem, 0, 0);
-  font-family: avenir-book;
- 
-}
 
-.subtitle {
-  margin-bottom: 0;
-}
-
-.button {
-  background: rgb(150, 73, 34);
-  background: linear-gradient(
-    184deg,
-    rgba(150, 73, 34, 1) 0%,
-    rgba(100, 34, 0, 1) 100%
-  );
-  padding: 1rem;
-  border-radius: 1.5rem;
-  padding: 0.5rem 2rem;
-  @include multi(font-size, 0.8rem, 0.8rem, 0.5rem, 0.8rem);
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.msg {
-  margin: 1rem 0;
-  border: 1px solid $soft_brown;
-  padding: 1rem;
-  width: 100%;
-  font-family: avenir-book;
-  letter-spacing: 0.1rem;
-}

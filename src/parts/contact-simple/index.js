@@ -7,8 +7,12 @@ const Clients = () => {
 
   return (
     <div className="contact-container " id="contact">
-      <div className="title pt-5">COMING OFF THE BENCH</div>
-      <div className="subtitle">CONTACT US</div>
+      <div className="cc-container">
+        <div className="cc-safe">
+          <div className="title pt-5">COMING OFF THE BENCH</div>
+          <div className="subtitle">CONTACT US</div>
+        </div>
+      </div>
       <div className="cc-container">
         <div className="cc-safe simple-contact-data">
         Ready for us to come and play for you?
