@@ -3,8 +3,9 @@
 $soft_gray: #454545;
 
 .contact-container {
-  // @include multi(height, 100vh, 100vh, 100vh, 100vh);
-  height: auto;
+  // border: 1px solid red; 
+  @include multi(height, 90vh !important, 90vh !important, 90vh !important, 90vh !important);
+  // height: auto;
   @include center-center();
   @include back-image();
   background-image: url(../../assets/images/contact.gif);
@@ -46,6 +47,21 @@ $soft_gray: #454545;
   }
   input{
     @include multi(margin, 0.5rem 0 !important, 0.5rem 0 !important, 0, 0);
+  }
+
+  /*new simple contact*/
+  .simple-contact-data{
+    // text-align: left;
+    @include multi(text-align, center, center, left, left);
+    // border: 1px solid blue;
+    a{
+      background: linear-gradient( 184deg , #964922 0%, #642200 100%);
+      display: inline-block;
+      margin-top: 3rem;
+      padding: 0.5rem 2rem;
+      // margin: 1rem;
+      border-radius: 2rem;
+    }
   }
 }
 

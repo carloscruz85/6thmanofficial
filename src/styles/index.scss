@@ -185,3 +185,12 @@
 .cta-contact {
   font-weight: bolder;
 }
+
+
+.cc-container{
+  width: 100%;
+  @include center-center();
+  .cc-safe{
+    @include multi( width, 90%, 90%, 80%, 90% );
+   }
+}
