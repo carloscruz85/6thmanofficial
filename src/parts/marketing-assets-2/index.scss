@@ -28,37 +28,29 @@
       position: relative;
       @include multi(width, 90%, 80%, 60%, 60%);
       @include multi(left, 5%, 5%, 0%, 0%);
-      // height: auto;
-      // border: 1px solid red;
-      .pc-image-a2 {
-        // position: absolute;
-        // @include multi(width, 100%, 100%, 100%, 100%);
+      img{
         width: 100%;
         height: auto;
-        // z-index: 99999 !important;
-        // top: 0;
-        // left: 0;
       }
-      .secure-frame-a2 {
-        position: absolute;
-        background-color: black;
-        width: 92%;
-        height: 55%;
-        top: 13%;
-        left: 4%;
+      .pc-frame{
+        // background-color: ;
+        @include multi(height, 20vh, 30vh, 25vh ,40vh);
+        border-left: 1rem black solid;
+        border-right: 1rem black solid;
         overflow: hidden;
-        .slider-container-a2 {
-          animation: Move 15s ease-in-out infinite;
-          @include multi(width, 100%, 100%, 100%, 100%);
-          top: 0%;
-          left: 0;
+        .slide{
           display: flex;
           flex-flow: row nowrap;
-          position: absolute;
-          background-color: black;
-          .slider-a2 {
-            @include multi(width, 100%, 100%, 100%, 100%);
+          position: relative;
+          animation: Move 10s ease-in-out infinite;
+          img{
+            width: 100%;
+            height: auto;
           }
+        }
+        img{
+          width: 100%;
+          height: auto;
         }
       }
     }
@@ -79,11 +71,23 @@
     left: -100%;
   }
 
+  30%{
+    left: -100%;
+  }
+
   50% {
     left: -200%;
   }
 
+  55%{
+    left: -200%;
+  }
+
   75% {
+    left: -300%;
+  }
+
+  80%{
     left: -300%;
   }
 

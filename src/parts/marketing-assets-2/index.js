@@ -6,6 +6,10 @@ import Kl2 from "../../assets/images/Klipsch-image02.jpg";
 import Kl3 from "../../assets/images/Klipsch-image01.jpg";
 import Kl4 from "../../assets/images/Klipsch-image03.jpg";
 
+import TopPc from "../../assets/images/top-desktop-pc.png"
+import BottomPc from "../../assets/images/bottom-desktop-pc.png"
+import TopBrowser from "../../assets/images/top-browser.png"
+
 // import Valdez from "../../assets/images/valdezpage.jpg";
 const MarketingAssets2 = () => {
   return (
@@ -22,15 +26,19 @@ const MarketingAssets2 = () => {
           </div>
         </div>
         <div className="pc-container-a2">
-          <div className="secure-frame-a2">
-            <div className="slider-container-a2">
-              <img src={Kl1} alt="kl1" className="slider-a2" />
-              <img src={Kl2} alt="kl2" className="slider-a2" />
-              <img src={Kl3} alt="kl3" className="slider-a2" />
-              <img src={Kl4} alt="kl4" className="slider-a2" />
+            <div className="desktop-slide">
+              <img src={TopPc} alt="pc" />
+              <div className="pc-frame">
+                <img src={TopBrowser} alt="browser" />
+                <div className="slide">
+                  <img src={Kl2} alt="kl2" className="slider-a2" />
+                  <img src={Kl1} alt="kl1" className="slider-a2" />
+                  <img src={Kl3} alt="kl3" className="slider-a2" />
+                  <img src={Kl4} alt="kl4" className="slider-a2" />
+                </div>
+              </div>
+              <img src={BottomPc} alt="pc" />
             </div>
-          </div>
-          <img src={Pc} alt="pc" className="pc-image-a2" />
         </div>
       </div>
     </div>
