@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import axios from "axios";
-import "./index.scss";
+// import "./index.scss";
 
 const Clients = () => {
   const first = useRef(null);
