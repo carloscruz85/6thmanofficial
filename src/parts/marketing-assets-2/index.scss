@@ -25,19 +25,31 @@
       }
     }
     .pc-container-a2 {
-      position: relative;
+      // position: relative;
       @include multi(width, 90%, 80%, 60%, 60%);
       @include multi(left, 5%, 5%, 0%, 0%);
+      // display: inline-block !important;
+
       img{
         width: 100%;
         height: auto;
+        display: inline-block !important;
+
       }
       .pc-frame{
-        // background-color: ;
-        @include multi(height, 20vh, 30vh, 25vh ,40vh);
-        border-left: 1rem black solid;
-        border-right: 1rem black solid;
+        // background-color: yellow;
+        // @include multi(height, 20vh, 30vh, 25vh ,40vh);
+        border-left: 2rem black solid;
+        border-right: 2rem black solid;
         overflow: hidden;
+        // display: inline-block;
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        img{
+          width: 100%;
+          height: auto;      
+        }
         .slide{
           display: flex;
           flex-flow: row nowrap;
@@ -48,10 +60,7 @@
             height: auto;
           }
         }
-        img{
-          width: 100%;
-          height: auto;
-        }
+
       }
     }
 
