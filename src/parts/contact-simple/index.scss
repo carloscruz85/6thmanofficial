@@ -8,6 +8,7 @@ $soft_gray: #454545;
   // height: auto;
   @include center-center();
   @include back-image();
+  @include multi(   background-position, 70% 50%, 60% center ,  center center,  center center );
   background-image: url(../../assets/images/contact.gif);
   input,
   textarea {
