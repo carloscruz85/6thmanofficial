@@ -1,0 +1,57 @@
+@import '../../styles/index.scss';
+
+.brand-dev-container {
+  // @include multi(height, auto, auto, 100vh, 100vh);
+  @include back-image();
+  br{
+    @include multi(display, none, none, block, block);
+
+  }
+  background-image: url(../../assets/images/CourtFloor.jpg);
+  .master-brand-dev-container {
+    @include multi(margin-top, 6rem, 6rem, 0, 0);
+  }
+  .intro-brand-dev {
+    @include center-center();
+    padding: 0;
+    margin: 0;
+    @include multi(margin, 2rem 0, 2rem 0, 0, 0);
+  }
+
+  img.brand-img {
+    width: 80% !important;
+    left: 10%;
+    position: relative;
+    height: auto;
+  }
+
+  .title {
+    display: inline-block;
+    @include multi(font-size, 2rem, 4rem, 2rem, 4rem);
+    @include multi(
+      border-bottom,
+      3px solid $soft_brown,
+      5px solid $soft_brown,
+      2px solid $soft_brown,
+      5px solid $soft_brown
+    );
+    @include multi(margin-top, 2rem, 2rem, 2rem, 4rem);
+  }
+  .intro-aux {
+    @include multi(margin, 2rem 0, 2rem 0, 2rem 0, 4rem 0);
+    font-family: Avenir-book;
+  }
+
+  .bi-pc{
+    @include multi(display, none, none, block, block);
+  }
+  .bi-m{
+    @include multi(display,block, block, none, none );
+    
+  }
+  div.bi-m{
+    position: relative;
+    left: 10%;
+    margin-top: 2rem;
+  }
+}

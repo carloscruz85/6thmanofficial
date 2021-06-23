@@ -1,0 +1,10 @@
+   @import "../../styles/index.scss";
+   .web-dev-master-container {
+    height: auto;
+    @include back-image();
+    background-image: url(../../assets/images/CourtFloor.jpg);
+    .inner-title{
+      font-size: 1.2rem;
+      font-weight: bold;
+   }
+   }

@@ -1,0 +1,52 @@
+@import "../../styles/index.scss";
+
+.aboutuspart-container {
+  position: relative;
+  @include multi(height, 100vh, 100vh, 100vh, 100vh);
+  //@include center-center();
+  @include back-image();
+  @include multi(background-position, 80%, 80%, center center, center center);
+  background-image: url(../../assets/images/aboutus-back.jpg);
+  .text-container {
+    position: relative;
+    @include center-center();
+    @include multi(height, 100vh, 100vh, 100vh, 100vh);
+    @include multi(padding-top, 15rem, 1rem, 0, 0);
+    @include multi(top,-5rem, -5rem, 0,0);
+    .about-us-text{
+      @include multi(line-height, 1.5rem, 1.5rem, 1rem, 1rem);
+      // background-color: red;
+      br{
+        @include multi(display, none, none, block, block)
+      }
+    }
+    .title {
+      @include multi(font-size, 2rem, 4rem, 2rem, 4rem);
+      @include multi(
+        border-bottom,
+        3px solid $soft_brown,
+        5px solid $soft_brown,
+        2px solid $soft_brown,
+        5px solid $soft_brown
+      );
+      @include multi(padding-bottom, 0.2rem, 1rem, 0.5rem, 1rem);
+    }
+    .subtitle {
+      margin-top: 1rem;
+      font-family: avenir-book;
+      color: white;
+      opacity: 0.5;
+      //width: 30%;
+      // @include multi(width, 80%, 80%, 50%, 30%);
+      @include multi(font-size, 15px, 15px, 10px, 15px);
+      @include multi(line-height, 1.5rem, 1.5rem, 1rem, 2rem);
+    }
+  }
+  .arrow-aboutus {
+    fill: $soft_brown !important;
+    // @include center-center();
+    cursor: pointer;
+    position: absolute;
+    bottom: 1rem;
+  }
+}

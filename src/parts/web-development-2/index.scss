@@ -1,0 +1,109 @@
+@import "../../styles/index.scss";
+
+.web-dev-2-container {
+  @include center-center();
+  // @include multi(height, auto, 100vh, 100vh, 100vh);
+  height: auto;
+  @include back-image();
+  //  background-image: url(../../assets/images/BallOnCourt.jpg);
+
+  .content-container {
+    @include multi(width, 100%, 100%, 70%, 80%);
+
+    .text,
+    .pc-wd2 {
+      // @include multi(width, 100%, 100%, 50%, 50%);
+      // @include center-center();
+      // border: 1px solid red;
+      padding: 1rem 0;
+    }
+
+    .pc-wd2 {
+      position: relative;
+      //  overflow: hidden;
+      @include multi(width, 80%, 80%, 60%, 60%);
+      @include multi(left, 10%, 10%, 0%, 0%);
+      @include multi(height, 28vh, 28vh, 50vh, 60vh);
+      // border: 1px solid red;
+      .pc-frame-wd2 {
+        position: absolute;
+        @include multi(width, 100%, 100%, 100%, 100%);
+        height: auto;
+        @include multi(left, 0, 0, 0%, 0%);
+        z-index: 8000 !important;
+        top: 0;
+      }
+      .image-container-wd2 {
+        // border: 1px solid red;
+        // background-color: red !important;
+        @include multi(height, 20vh, 20vh, 42vh, 47vh);
+        overflow: hidden;
+
+        .innerimage-wd2 {
+          animation: MoveUp 15s ease-in-out infinite;
+          width: 80%;
+          height: auto;
+          position: relative;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+
+    .text {
+      @include multi(width, 100%, 100%, 40%, 40%);
+      @include center-center();
+
+      .text-container {
+        @include multi(text-align, center, center, left, left);
+        @include multi(padding, 1rem, 2rem, 0, 0);
+        @include multi(width, 100%, 100%, 50%, 50%);
+        @include multi(font-size, 1rem, 1rem, 0.5rem, 1rem);
+
+        div {
+          opacity: 0.5;
+        }
+
+        h3 {
+          @include multi(font-size, 1.5rem, 1.5rem, 1rem, 2rem);
+        }
+      }
+    }
+
+    // .slider-container:hover{
+    //  animation: Move 15s ease-in-out infinite;
+
+    // }
+  }
+}
+
+.inner-cel {
+  position: absolute;
+  @include multi(left, 0rem, -2rem, -2rem, -2rem);
+  z-index: 8000 !important;
+  bottom: 0;
+  @include multi(width, 20%, 20%, 20%, 20%);
+  transform: rotate(10deg);
+}
+
+@keyframes MoveUp {
+  0% {
+    top: 0;
+  }
+
+  25% {
+    top: -100%;
+  }
+
+  50% {
+    top: -200%;
+  }
+
+  75% {
+    top: -100%;
+  }
+
+  100% {
+    top: 0;
+  }
+}

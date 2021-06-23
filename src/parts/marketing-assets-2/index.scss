@@ -1,0 +1,93 @@
+@import "../../styles/index.scss";
+
+.marketing-assets-2-container {
+  @include center-center();
+  height: auto;
+  // background-color: #454545 !important;
+  .content-container-a2 {
+    margin: 4rem 0;
+    @include multi(width, 100%, 100%, 70%, 80%);
+
+    .text-a2 {
+      @include multi(width, 100%, 100%, 40%, 40%);
+      @include center-center();
+      .text-container-a2 {
+        @include multi(text-align, center, center, left, left);
+        @include multi(padding, 1rem, 2rem, 0, 0);
+        @include multi(width, 100%, 100%, 50%, 50%);
+        @include multi(font-size, 1rem, 1rem, 0.5rem, 1rem);
+        div {
+          opacity: 0.5;
+        }
+        h3 {
+          @include multi(font-size, 1.5rem, 1.5rem, 1rem, 2rem);
+        }
+      }
+    }
+    .pc-container-a2 {
+      position: relative;
+      @include multi(width, 90%, 80%, 60%, 60%);
+      @include multi(left, 5%, 5%, 0%, 0%);
+      // height: auto;
+      // border: 1px solid red;
+      .pc-image-a2 {
+        // position: absolute;
+        // @include multi(width, 100%, 100%, 100%, 100%);
+        width: 100%;
+        height: auto;
+        // z-index: 99999 !important;
+        // top: 0;
+        // left: 0;
+      }
+      .secure-frame-a2 {
+        position: absolute;
+        background-color: black;
+        width: 92%;
+        height: 55%;
+        top: 13%;
+        left: 4%;
+        overflow: hidden;
+        .slider-container-a2 {
+          animation: Move 15s ease-in-out infinite;
+          @include multi(width, 100%, 100%, 100%, 100%);
+          top: 0%;
+          left: 0;
+          display: flex;
+          flex-flow: row nowrap;
+          position: absolute;
+          background-color: black;
+          .slider-a2 {
+            @include multi(width, 100%, 100%, 100%, 100%);
+          }
+        }
+      }
+    }
+
+    // .slider-container:hover{
+    //  animation: Move 15s ease-in-out infinite;
+
+    // }
+  }
+}
+
+@keyframes Move {
+  0% {
+    left: 0;
+  }
+
+  25% {
+    left: -100%;
+  }
+
+  50% {
+    left: -200%;
+  }
+
+  75% {
+    left: -300%;
+  }
+
+  100% {
+    left: 0;
+  }
+}

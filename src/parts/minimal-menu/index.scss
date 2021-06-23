@@ -1,0 +1,27 @@
+@import "../../styles/index.scss";
+
+.minimal-menu{
+    padding: 1.5rem 0;
+    margin-bottom: 1rem !important;
+    @include multi(display, grid, grid, none, none);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    div{
+        text-align: center;
+        @include center-center();
+        img{
+            width: 30%;
+            height: auto;
+        }
+        svg{
+            fill: white;
+        }
+        span{
+            margin-left: 0.5rem;
+        }
+
+    }
+}
