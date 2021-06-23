@@ -111,7 +111,7 @@ $aux: 1px $soft_brown solid;
     none,
     solid 5px $soft_brown !important,
     solid 5px $soft_brown !important
-  )
+  );
   @include multi(padding-left, 0, 0, 1rem, 1.5rem);
   .intro-logo {
     @include multi(width, 120px, 100px, 100px, 200px);
