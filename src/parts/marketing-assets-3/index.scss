@@ -12,21 +12,28 @@
   .content-container-a3 {
     // position: relative;
     // border: 1px solid yellow;
-    @include multi(width, 100%, 100%, 70%, 80%);
     margin: 4rem 0;
+    @include multi(width, 100%, 100%, 70%, 80%);
 
     .pc-a3 {
       position: relative;
+      // background-color: cyan;
+      @include center-center();
+      @include multi(width, 100%, 100%, 60%, 60%);
       img.rotate-cel-in-vertical{
         position: absolute;
         bottom: 0;
         left: 0;
         z-index: 9999;
         // display: none;
-        @include multi(width, 20%, 20%, 20%, 20%);
         transform: rotate(10deg);
+        @include multi(width, 20%, 20%, 20%, 20%);
+        @include multi(left, 5%, 10%, 0%, 0%);
       }
       .desktop-slide-vertical{
+        // position: relative;
+        @include multi(width, 90%, 80%, 100%, 100%);
+        // @include multi(left, 5%, 10%, 0%, 0%);
         img{
           width: 100%;
           height: auto;

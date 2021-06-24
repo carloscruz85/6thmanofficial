@@ -25,9 +25,10 @@
       }
     }
     .pc-container-a2 {
-      // position: relative;
+      // background-color: yellow;
+      position: relative;
       @include multi(width, 90%, 80%, 60%, 60%);
-      @include multi(left, 5%, 5%, 0%, 0%);
+      @include multi(left, 5%, 10%, 0%, 0%);
       // display: inline-block !important;
 
       img{
