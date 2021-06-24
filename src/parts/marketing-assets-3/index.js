@@ -14,7 +14,7 @@ const MarketingAssets3 = () => {
       <div className="d-flex flex-column flex-lg-row-reverse content-container-a3">
         <div className="pc-a3">
   
-
+          
           <div className="desktop-slide-vertical">
               <img src={TopPc} alt="pc" />
               <div className="pc-frame-vertical">
@@ -26,7 +26,8 @@ const MarketingAssets3 = () => {
               <img src={BottomPc} alt="pc" />
             </div>
 
-          {/* <img src={Cel} alt="cel" className="inner-cel-a3" /> */}
+            <img src={Cel} alt="cel" className="rotate-cel-in-vertical" />
+          
         </div>
         <div className="text-a3">
           <div className="text-container-a3">

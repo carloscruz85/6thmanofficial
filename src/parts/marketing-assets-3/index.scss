@@ -16,13 +16,23 @@
     margin: 4rem 0;
 
     .pc-a3 {
-      img{
-        width: 100%;
-        height: auto;
-        display: inline-block !important;
-
+      position: relative;
+      img.rotate-cel-in-vertical{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+        // display: none;
+        @include multi(width, 20%, 20%, 20%, 20%);
+        transform: rotate(10deg);
       }
       .desktop-slide-vertical{
+        img{
+          width: 100%;
+          height: auto;
+          display: inline-block !important;
+     
+        }
         // background-color: yellow;
         // padding-top: 3rem;
         .pc-frame-vertical{
@@ -45,10 +55,10 @@
             // flex-flow: row nowrap;
             // position: relative;
             // 
-            background-color: yellow;
+            // background-color: yellow;
             position: relative;
             padding-top: 50%;
-            img{
+            img.innerimage-a3{
               z-index: 9998;
               // display: none !important;
               width: 100%;
@@ -58,6 +68,7 @@
               left: 0;
               animation: MoveUpNew 30s ease-in-out infinite;
             }
+     
           }
   
         }
@@ -89,14 +100,7 @@
   }
 }
 
-.inner-cel-a3 {
-  position: absolute;
-  @include multi(left, 0rem, -2rem, 0rem, 0rem);
-  z-index: 8000 !important;
-  bottom: 0;
-  @include multi(width, 20%, 20%, 20%, 20%);
-  transform: rotate(10deg);
-}
+
 
 @keyframes MoveUpNew {
   0% {
