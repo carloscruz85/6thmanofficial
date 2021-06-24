@@ -1,6 +1,5 @@
 import React from "react";
 import "./index.scss";
-import Pc from "../../assets/images/Devices-Desktop.png";
 import Kl1 from "../../assets/images/Klipsch-Cover.jpg";
 import Kl2 from "../../assets/images/Klipsch-image02.jpg";
 import Kl3 from "../../assets/images/Klipsch-image01.jpg";
