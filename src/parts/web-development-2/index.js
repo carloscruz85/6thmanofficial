@@ -3,14 +3,24 @@ import "./index.scss";
 import Pc from "../../assets/images/Devices-Laptop.png";
 import Landing from "../../assets/images/WebDev-scroll-LandingPage.jpg";
 
+import TopPc from "../../assets/images/top-laptop.png"
+import BottomPc from "../../assets/images/bottom-laptop.png"
+import TopBrowser from "../../assets/images/top-browser.png"
+
 const WebDev2 = () => {
   return (
     <div className="web-dev-2-container ">
       <div className="d-flex flex-column flex-lg-row-reverse content-container">
         <div className="pc-wd2">
-          <img src={Pc} alt="pc" className="pc-frame-wd2" />
-          <div className="image-container-wd2">
-            <img src={Landing} alt="Info" className="innerimage-wd2" />
+          <div className="laptop-slide-vertical">
+            <img src={TopPc} alt="pc" />
+            <div className="laptop-frame-vertical">
+              <img src={TopBrowser} alt="browser" className="top-browser"/>
+              <div className="slide-vertical">
+                <img src={Landing} alt="Info" className="innerimage-a3" />
+              </div>
+            </div>
+            <img src={BottomPc} alt="pc" />
           </div>
         </div>
         <div className="text">
