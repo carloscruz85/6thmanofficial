@@ -25,19 +25,25 @@ const MarketingAssets2 = () => {
           </div>
         </div>
         <div className="pc-container-a2">
-            <div className="desktop-slide">
-              <img src={TopPc} alt="pc" />
-              <div className="pc-frame">
-                <img src={TopBrowser} alt="browser" />
-                <div className="slide">
+          <div className="desktop-slide">
+            <img src={TopPc} alt="pc" />
+            <div className="pc-screen">
+              <img src={TopBrowser} alt="browser" />
+              <div className="secure-screen">
+                <div className="slider-container">
+                       <div className="slide">
                   <img src={Kl2} alt="kl2" className="slider-a2" />
                   <img src={Kl1} alt="kl1" className="slider-a2" />
                   <img src={Kl3} alt="kl3" className="slider-a2" />
                   <img src={Kl4} alt="kl4" className="slider-a2" />
                 </div>
+                </div>
+           
               </div>
-              <img src={BottomPc} alt="pc" />
+
             </div>
+            <img src={BottomPc} alt="pc" />
+          </div>
         </div>
       </div>
     </div>

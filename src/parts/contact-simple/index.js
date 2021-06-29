@@ -19,7 +19,9 @@ const Clients = () => {
         <br /> Pass us the ball and let us help you achive the vision
         <br />your have for your brand
         <br />
-        <a href="mailto:rod@6thman.us">Tell us about your project</a>
+        <div className="intro-button-container">
+            <a href="mailto:rod@6thman.us" className="cta-button">Tell us about your project</a>
+        </div>
         </div>
     
       </div>

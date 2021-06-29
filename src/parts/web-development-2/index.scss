@@ -1,12 +1,14 @@
 @import "../../styles/index.scss";
 
+$pc-color : #0c0c0a;
+
 .web-dev-2-container {
   @include center-center();
   // @include multi(height, auto, 100vh, 100vh, 100vh);
   height: auto;
   @include back-image();
   //  background-image: url(../../assets/images/BallOnCourt.jpg);
-
+  margin-bottom: 10rem;
   .content-container {
     @include multi(width, 100%, 100%, 70%, 80%);
 
@@ -15,7 +17,7 @@
       // @include multi(width, 100%, 100%, 50%, 50%);
       // @include center-center();
       // border: 1px solid red;
-      padding: 1rem 0;
+      padding: 0;
     }
 
     .pc-wd2 {
@@ -23,31 +25,73 @@
       //  overflow: hidden;
       @include multi(width, 80%, 80%, 60%, 60%);
       @include multi(left, 10%, 10%, 0%, 0%);
-      @include multi(height, 28vh, 28vh, 50vh, 60vh);
+      // @include multi(height, 28vh, 28vh, 50vh, 60vh);
       // border: 1px solid red;
-      .pc-frame-wd2 {
-        position: absolute;
-        @include multi(width, 100%, 100%, 100%, 100%);
+      // background-color: yellow;
+      * {line-height: 0 !important;}
+      img{
+        width: 100%;
         height: auto;
-        @include multi(left, 0, 0, 0%, 0%);
-        z-index: 8000 !important;
-        top: 0;
+        
       }
-      .image-container-wd2 {
-        // border: 1px solid red;
-        // background-color: red !important;
-        @include multi(height, 20vh, 20vh, 42vh, 47vh);
-        overflow: hidden;
-
-        .innerimage-wd2 {
-          animation: MoveUp 15s ease-in-out infinite;
+   
+      .laptop-slide-vertical{
+        // background-color: yellow;
+        
+        .laptop-frame-vertical{
+          
+          // background-color: cyan;
+          // @include multi(height, 20vh, 30vh, 25vh ,40vh);
+          line-height: 0 !important;
+          // border-left: 0.5rem #0c0c0a solid;
+          // border-right: 0.5rem #0c0c0a solid;
+          // border: 2px solid #39383c;
+          overflow: hidden;
+          // display: inline-block;
+          display: flex;
+          flex-flow: column nowrap;
           width: 80%;
-          height: auto;
+          left: 10%;
           position: relative;
-          top: 0;
-          left: 0;
+          img{
+           
+            width: 100%;
+            height: auto;
+            z-index: 9999;      
+          }
+          img.top-browser{
+            // width: 96%;
+            // left: 2%;
+            position: relative;
+            border-right: 0.6rem solid $pc-color;
+            border-left: 0.6rem solid $pc-color;
+          }
+          .slide-vertical{
+            border: 0.6rem solid $pc-color;
+            // @include multi( border,  )
+            // display: flex;
+            // flex-flow: row nowrap;
+            // position: relative;
+            // 
+            // background-color: yellow;
+            position: relative;
+            padding-top: 50%;
+            img.innerimage-a3{
+              z-index: 9998;
+              // display: none !important;
+              width: 100%;
+              height: auto;
+              position: absolute;
+              top: 0;
+              left: 0;
+              animation: MoveUpLaptop 10s ease-in-out infinite;
+            }
+     
+          }
+  
         }
       }
+      
     }
 
     .text {
@@ -86,7 +130,7 @@
   transform: rotate(10deg);
 }
 
-@keyframes MoveUp {
+@keyframes MoveUpLaptop {
   0% {
     top: 0;
   }
@@ -96,7 +140,7 @@
   }
 
   50% {
-    top: -200%;
+    top: -276%;
   }
 
   75% {
