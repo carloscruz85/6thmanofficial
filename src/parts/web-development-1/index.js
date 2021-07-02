@@ -14,7 +14,7 @@ const WebDevelopment1 = () => {
       <div className="container wb-master-container">
         <div className="row">
           <div className="col-12 title-default-container">
-            <span className="title-default w-d-title just-pc-inline-block">Wev Development</span>
+            <span className="title-default w-d-title just-pc-inline-block">Web Development</span>
             <span className="title-default w-d-title just-mobile-inline-block">Web DEV</span>
             <div className="intro-default w-d-intro">
               The proper development of your brand’s online presence is
