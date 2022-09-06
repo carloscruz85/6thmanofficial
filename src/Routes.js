@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./views/home";
 import About from "./views/about";
 import MarketingAssets from "./views/marketing-assets";
@@ -16,20 +16,24 @@ import UnderConstruction from "./views/under-construction";
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/aboutus" component={About} />
-        <Route exact path="/marketingassets" component={MarketingAssets} />
-        <Route exact path="/ourwork" component={OurWork} />
-        <Route exact path="/webdevelopment" component={WebDev} />
-        <Route exact path="/motiongraphics" component={MotionGraphics} />
-        <Route exact path="/uiuxdesign" component={Ui} />
-        <Route exact path="/branddevelopment" component={BrandDev} />
-        <Route exact path="/contact" component={ContactView} />
-        <Route exact path="/appdev" component={AppDev} />
-        <Route exact path="/services" component={Services} />
-        <Route exact path="/underconstruction" component={UnderConstruction} />
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/aboutus" element={<About />} />
+        <Route exact path="/marketingassets" element={<MarketingAssets />} />
+        <Route exact path="/ourwork" element={<OurWork />} />
+        <Route exact path="/webdevelopment" element={<WebDev />} />
+        <Route exact path="/motiongraphics" element={<MotionGraphics />} />
+        <Route exact path="/uiuxdesign" element={<Ui />} />
+        <Route exact path="/branddevelopment" element={<BrandDev />} />
+        <Route exact path="/contact" element={<ContactView />} />
+        <Route exact path="/appdev" element={<AppDev />} />
+        <Route exact path="/services" element={<Services />} />
+        <Route
+          exact
+          path="/underconstruction"
+          element={<UnderConstruction />}
+        />
+      </Routes>
     </Router>
   );
 }

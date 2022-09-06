@@ -9,13 +9,13 @@ const Intro = () => {
     <div className="intro">
       <div className="container-fluid inner-intro">
         <div className="row">
-          <div className="col-12 col-md-6 ">
+          <div className="col-12 col-md-6 ball-container">
             <img alt="ball" src={Ball} className="animated-ball" />
             <img alt="ball" src={Ball} className="animated-ball-min" />
           </div>
           <div className="col-12 col-md-6 intro-container">
             <div className="intro-text">
-            <div className="pre-intro">
+              <div className="pre-intro">
                 <img alt="6thman" src={LogoText} className="intro-logo" />
                 <div className="intro-explain">
                   [Siksth-Man] - Noun / Basketball term
