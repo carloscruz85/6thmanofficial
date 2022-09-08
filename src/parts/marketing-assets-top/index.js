@@ -66,7 +66,7 @@ const MarketingAssetsTop = () => {
 										className="second-video"
 									>
 										<source
-											src="https://6thman.us/media/SocialAssets-Animation03.mp4"
+											src="https://6thman.us/media/howarts.mp4"
 											type="video/mp4"
 										/>
 									</video>
